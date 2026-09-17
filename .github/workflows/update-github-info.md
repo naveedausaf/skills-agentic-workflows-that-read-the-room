@@ -7,6 +7,10 @@ on:
 permissions:
   contents: read
 
+model: gemini-3.8-flash
+engine:
+  id: copilot
+
 tools:
   edit: true
   web-fetch:
