@@ -154,8 +154,6 @@ jobs:
                 passed: ${{ steps.check-workflow-file.outcome == 'success' }}
               - description: "Checked for the compiled .github/workflows/update-github-info.lock.yml"
                 passed: ${{ steps.check-lock-file.outcome == 'success' }}
-              - description: "Checked that the agent instructions include the no auto-compile rule"
-                passed: ${{ steps.check-agent-no-compile.outcome == 'success' }}
               - description: "Checked that the workflow uses Mona's notes, the GitHub Blog, and the GitHub Changelog"
                 passed: ${{ steps.check-workflow-sources.outcome == 'success' }}
               - description: "Checked that the compiled workflow has the expected name"
