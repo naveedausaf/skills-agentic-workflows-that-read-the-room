@@ -7,7 +7,7 @@ on:
 permissions:
   contents: read
 
-model: gemini-3.8-flash
+model: claude-sonnet-4.5
 engine:
   id: copilot
 
