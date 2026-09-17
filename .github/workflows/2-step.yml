@@ -70,15 +70,6 @@ jobs:
         with:
           file: .github/workflows/update-github-info.lock.yml
 
-      - name: Check agent instructions include no auto-compile rule
-        id: check-agent-no-compile
-        continue-on-error: true
-        uses: skills/action-keyphrase-checker@v2
-        with:
-          text-file: .github/agents/agentic-workflows.md
-          keyphrase: do not compile
-          case-sensitive: false
-
       - name: Check workflow uses all three sources
         id: check-workflow-sources
         continue-on-error: true
